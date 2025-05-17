@@ -1,23 +1,31 @@
-const menuButton = document.getElementById("menuButton");
-const navMenu = document.querySelector("nav ul");
+// Toggle menu
+const menuButton = document.querySelector(".menu-button");
+
+function toggleMenu() {
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("hide");
+}
+
+menuButton.addEventListener("click", toggleMenu);
+
+// Responsive fix on resize
+function handleResize() {
+  const menu = document.querySelector(".menu");
+  if (window.innerWidth > 1000) {
+    menu.classList.remove("hide");
+  } else {
+    menu.classList.add("hide");
+  }
+}
+
+window.addEventListener("resize", handleResize);
+window.addEventListener("load", handleResize);
+
+// Modal image viewer
 const modal = document.querySelector("dialog.modal");
 const modalImg = document.querySelector(".modal-img");
 const closeBtn = document.querySelector(".close-viewer");
 const gallery = document.querySelector(".gallery");
-
-menuButton.addEventListener("click", () => {
-  navMenu.classList.toggle("hide");
-});
-
-function handleResize() {
-  if (window.innerWidth > 1000) {
-    navMenu.classList.remove("hide");
-  } else {
-    navMenu.classList.add("hide");
-  }
-}
-window.addEventListener("resize", handleResize);
-window.addEventListener("load", handleResize);
 
 gallery.addEventListener("click", (event) => {
   const img = event.target.closest("img");
