@@ -1,99 +1,106 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0;
-    color: #473144;
-    background-color: #fff;
-  }
-  
-  h1 {
-    font-family: 'Lora', serif;
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-  }
-  
-  a {
-    color: #AF1B3F;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Navigation */
-  .main-nav {
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    justify-content: end;
-    list-style: none;
-    gap: 1rem;
-    padding: 1rem;
-    border-top: 1px solid #EFC69B;
-    border-bottom: 1px solid #EFC69B;
-    max-width: 960px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-  
-  /* Skip to content */
-  .skiptocontent a {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #AF1B3F;
-    color: white;
-    padding: 8px;
-    z-index: 100;
-  }
-  .skiptocontent a:focus {
-    top: 0;
-  }
-  
-  /* Layout */
-  .page-grid {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 2rem;
-    max-width: 960px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  
-  /* Book article layout */
-  .book {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .book-details {
-    text-align: right;
-    font-size: 0.9rem;
-    color: #777;
-  }
-  
-  .book-content h2 {
-    font-family: 'Lora', serif;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: #AF1B3F;
-  }
-  
-  .book-content img {
-    width: 150px;
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .book-content p {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-  
-  .filters {
-    border: 1px solid #EFC69B;
-    padding: 1rem;
-    color: #999;
-  }
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: #473144;
+  background-color: #fff;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+a {
+  color: #AF1B3F;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+.main-nav {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: end;
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 1px solid #EFC69B;
+  border-bottom: 1px solid #EFC69B;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Skip to content */
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #AF1B3F;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+.skiptocontent a:focus {
+  top: 0;
+}
+
+/* Layout */
+.page-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Book article layout */
+.book {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.book-details {
+  text-align: right;
+  border-right: 1px solid #EFC69B;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.book-details p {
+  margin: 0.3rem 0;
+}
+
+.book-content h2 {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  margin: 0;
+  color: #AF1B3F;
+}
+
+.book-content img {
+  width: 150px;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+.book-content p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.filters {
+  border: 1px solid #EFC69B;
+  padding: 1rem;
+  color: #999;
+}
